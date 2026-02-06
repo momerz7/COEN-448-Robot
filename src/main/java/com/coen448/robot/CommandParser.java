@@ -1,5 +1,6 @@
 package com.coen448.robot;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CommandParser {
@@ -7,7 +8,7 @@ public class CommandParser {
 
     private static final Pattern INIT_COMMAND = Pattern.compile("^([IiMm])( ?)(\\d+)$");
 
-    public Command parse(string line) {
+    public Command parse(String line) {
         if (line == null) throw new IllegalArgumentException("Command cannot be null");
         String s = line.trim();
 
