@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.coen448.robot.AppTest" time="0.001" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.coen448.robot.FloorTest" time="0.026" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -59,5 +59,15 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.coen448.robot.AppTest" time="0.0"/>
+  <testcase name="testConstructorZero" classname="com.coen448.robot.FloorTest" time="0.009"/>
+  <testcase name="testMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.001"/>
+  <testcase name="testCOnstructorNegative" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testClear" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testMark" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testNotInBounds" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testRenderWithIndices" classname="com.coen448.robot.FloorTest" time="0.003"/>
+  <testcase name="testInBounds" classname="com.coen448.robot.FloorTest" time="0.001"/>
+  <testcase name="testRenderMarkedCells" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testIsMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.001"/>
+  <testcase name="testConstructor" classname="com.coen448.robot.FloorTest" time="0.0"/>
 </testsuite>

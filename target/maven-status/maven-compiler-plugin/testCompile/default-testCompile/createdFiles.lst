@@ -1,1 +1,5 @@
+com/coen448/robot/FloorTest.class
+com/coen448/robot/SimulatorTest.class
 com/coen448/robot/AppTest.class
+com/coen448/robot/RobotTest.class
+com/coen448/robot/CommandParserTest.class

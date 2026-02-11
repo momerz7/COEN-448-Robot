@@ -37,6 +37,7 @@
           <version>3.2.5</version>
           <configuration>
             <useModulePath>false</useModulePath>
+            <mainClass>com.coen448.robot.Main</mainClass>
           </configuration>
         </plugin>
         
