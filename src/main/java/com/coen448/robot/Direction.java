@@ -1,7 +1,5 @@
 package com.coen448.robot;
 
-import java.awt.image.DirectColorModel;
-
 public enum Direction {
     NORTH(0,1),
     EAST(1,0),
@@ -20,7 +18,7 @@ public enum Direction {
         return dx;
     }
 
-    publlic int dy() {
+    public int dy() {
         return dy;
     }
 
