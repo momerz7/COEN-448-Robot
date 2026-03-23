@@ -5,104 +5,104 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-<span class="nc" id="L8">public class Main {</span>
+<span class="fc" id="L8">public class Main {</span>
 
     public static void main(String[] args){
 
-<span class="nc" id="L12">        Simulator sim = new Simulator();</span>
-<span class="nc" id="L13">        CommandParser parser = new CommandParser();</span>
-<span class="nc" id="L14">        List&lt;String&gt; history = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L12">        Simulator sim = new Simulator();</span>
+<span class="fc" id="L13">        CommandParser parser = new CommandParser();</span>
+<span class="fc" id="L14">        List&lt;String&gt; history = new ArrayList&lt;&gt;();</span>
 
-<span class="nc" id="L16">        try(Scanner sc = new Scanner(System.in)){</span>
+<span class="fc" id="L16">        try(Scanner sc = new Scanner(System.in)){</span>
 
-<span class="nc" id="L18">            while(true){</span>
-<span class="nc" id="L19">                System.out.print(&quot;Enter command: &quot;);</span>
-<span class="nc" id="L20">                String line = sc.nextLine();</span>
+            while(true){
+<span class="fc" id="L19">                System.out.print(&quot;Enter command: &quot;);</span>
+<span class="fc" id="L20">                String line = sc.nextLine();</span>
 
                 try {
 
-<span class="nc" id="L24">                    Command cmd = parser.parse(line);</span>
-<span class="nc bnc" id="L25" title="All 2 branches missed.">                    if(cmd.type()==CommandType.History){</span>
+<span class="fc" id="L24">                    Command cmd = parser.parse(line);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">                    if(cmd.type()==CommandType.History){</span>
 
-<span class="nc" id="L27">                        replay(history,parser);</span>
-<span class="nc" id="L28">                        continue;</span>
+<span class="fc" id="L27">                        replay(history,parser);</span>
+<span class="fc" id="L28">                        continue;</span>
 
                     }
 
-<span class="nc" id="L32">                    history.add(line.trim());</span>
+<span class="fc" id="L32">                    history.add(line.trim());</span>
 
-<span class="nc bnc" id="L34" title="All 2 branches missed.">                    if(cmd.type()==CommandType.Quit){ break ;}</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">                    if(cmd.type()==CommandType.Quit){ break ;}</span>
 
-<span class="nc" id="L36">                    executeAndPrint(sim,cmd);</span>
+<span class="fc" id="L36">                    executeAndPrint(sim,cmd);</span>
                     
-<span class="nc" id="L38">                } catch (Exception e) {</span>
-<span class="nc" id="L39">                    System.out.println(&quot;Error: &quot;+e.getMessage());</span>
-                }
-            }
+<span class="fc" id="L38">                } catch (Exception e) {</span>
+<span class="fc" id="L39">                    System.out.println(&quot;Error: &quot;+e.getMessage());</span>
+<span class="fc" id="L40">                }</span>
+<span class="fc" id="L41">            }</span>
 
         }
 
-<span class="nc" id="L45">    }</span>
+<span class="fc" id="L45">    }</span>
 
 
     private static void replay(List&lt;String&gt; history, CommandParser parser){
 
-<span class="nc" id="L50">        Simulator replaysim = new Simulator();</span>
+<span class="fc" id="L50">        Simulator replaysim = new Simulator();</span>
 
-<span class="nc bnc" id="L52" title="All 2 branches missed.">        for (String pastLine : history){</span>
-<span class="nc" id="L53">            Command pastCmd = parser.parse(pastLine);</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        for (String pastLine : history){</span>
+<span class="fc" id="L53">            Command pastCmd = parser.parse(pastLine);</span>
 
-<span class="nc bnc" id="L55" title="All 4 branches missed.">            if(pastCmd.type()==CommandType.Quit || pastCmd.type() == CommandType.History){</span>
-<span class="nc" id="L56">                continue;</span>
+<span class="fc bfc" id="L55" title="All 4 branches covered.">            if(pastCmd.type()==CommandType.Quit || pastCmd.type() == CommandType.History){</span>
+<span class="fc" id="L56">                continue;</span>
             }
 
-<span class="nc" id="L59">            executeAndPrint(replaysim,pastCmd);</span>
-        }
+<span class="fc" id="L59">            executeAndPrint(replaysim,pastCmd);</span>
+<span class="fc" id="L60">        }</span>
 
-<span class="nc" id="L62">    }</span>
+<span class="fc" id="L62">    }</span>
 
     private static void executeAndPrint(Simulator sim, Command cmd){
 
-<span class="nc bnc" id="L66" title="All 10 branches missed.">        switch(cmd.type()){</span>
+<span class="fc bfc" id="L66" title="All 10 branches covered.">        switch(cmd.type()){</span>
 
             case Pen_Up -&gt; {
-<span class="nc" id="L69">                sim.penUp();</span>
-<span class="nc" id="L70">                System.out.println(&quot;Pen Lifted.&quot;);</span>
-            }
+<span class="fc" id="L69">                sim.penUp();</span>
+<span class="fc" id="L70">                System.out.println(&quot;Pen Lifted.&quot;);</span>
+<span class="fc" id="L71">            }</span>
             case Pen_Down -&gt; {
-<span class="nc" id="L73">                sim.penDown();</span>
-<span class="nc" id="L74">                System.out.println(&quot;Pen Placed.&quot;);</span>
-            }
+<span class="fc" id="L73">                sim.penDown();</span>
+<span class="fc" id="L74">                System.out.println(&quot;Pen Placed.&quot;);</span>
+<span class="fc" id="L75">            }</span>
             case Right -&gt; {
-<span class="nc" id="L77">                sim.turnRight();</span>
-<span class="nc" id="L78">                System.out.println(&quot;Turned Right. Facing: &quot; + sim.snapshotRobot().getFacing().toString().toLowerCase()+&quot;.&quot;);</span>
-            }
+<span class="fc" id="L77">                sim.turnRight();</span>
+<span class="fc" id="L78">                System.out.println(&quot;Turned Right. Facing: &quot; + sim.snapshotRobot().getFacing().toString().toLowerCase()+&quot;.&quot;);</span>
+<span class="fc" id="L79">            }</span>
             case Left -&gt; {
-<span class="nc" id="L81">                sim.turnLeft();</span>
-<span class="nc" id="L82">                System.out.println(&quot;Turned Left. Facing: &quot; + sim.snapshotRobot().getFacing().toString().toLowerCase()+&quot;.&quot;);</span>
-            }
+<span class="fc" id="L81">                sim.turnLeft();</span>
+<span class="fc" id="L82">                System.out.println(&quot;Turned Left. Facing: &quot; + sim.snapshotRobot().getFacing().toString().toLowerCase()+&quot;.&quot;);</span>
+<span class="fc" id="L83">            }</span>
             case Move -&gt; {
-<span class="nc" id="L85">                sim.move(cmd.arg());</span>
-<span class="nc" id="L86">                System.out.println(&quot;Move accepted. Steps moved: &quot; + cmd.arg() +&quot;.&quot;);</span>
-            }
+<span class="fc" id="L85">                sim.move(cmd.arg());</span>
+<span class="fc" id="L86">                System.out.println(&quot;Move accepted. Steps moved: &quot; + cmd.arg() +&quot;.&quot;);</span>
+<span class="fc" id="L87">            }</span>
             case Print -&gt; {
-<span class="nc" id="L89">                System.out.println(&quot;Printing floor:&quot;);</span>
-<span class="nc" id="L90">                System.out.print(sim.floorString());</span>
-            }
+<span class="fc" id="L89">                System.out.println(&quot;Printing floor:&quot;);</span>
+<span class="fc" id="L90">                System.out.print(sim.floorString());</span>
+<span class="fc" id="L91">            }</span>
             case Status -&gt; {
-<span class="nc" id="L93">                System.out.println(&quot;Displaying status:&quot;);</span>
-<span class="nc" id="L94">                System.out.println(sim.statusString());</span>
-            }
-            case Quit -&gt; {/*handled in main loop */ }
+<span class="fc" id="L93">                System.out.println(&quot;Displaying status:&quot;);</span>
+<span class="fc" id="L94">                System.out.println(sim.statusString());</span>
+<span class="fc" id="L95">            }</span>
+<span class="fc" id="L96">            case Quit -&gt; {/*handled in main loop */ }</span>
             case Init -&gt; {
-<span class="nc" id="L98">                sim.initialize(cmd.arg());</span>
-<span class="nc" id="L99">                System.out.println(&quot;Initialization successful. Floor size: &quot; + cmd.arg() + &quot;x&quot; + cmd.arg() +&quot;.&quot;);</span>
-            }
+<span class="fc" id="L98">                sim.initialize(cmd.arg());</span>
+<span class="fc" id="L99">                System.out.println(&quot;Initialization successful. Floor size: &quot; + cmd.arg() + &quot;x&quot; + cmd.arg() +&quot;.&quot;);</span>
+<span class="fc" id="L100">            }</span>
             case History -&gt; {/*handled in main loop */ }
 
         }
 
-<span class="nc" id="L105">    }</span>
+<span class="fc" id="L105">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

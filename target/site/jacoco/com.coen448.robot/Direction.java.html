@@ -23,19 +23,19 @@
     }
 
     public Direction turnRight() {
-<span class="pc bpc" id="L26" title="2 of 4 branches missed.">        return switch (this) {</span>
+<span class="fc bfc" id="L26" title="All 4 branches covered.">        return switch (this) {</span>
 <span class="fc" id="L27">            case NORTH -&gt; EAST;</span>
 <span class="fc" id="L28">            case EAST -&gt; SOUTH;</span>
-<span class="nc" id="L29">            case SOUTH -&gt; WEST;</span>
-<span class="nc" id="L30">            case WEST -&gt; NORTH;</span>
+<span class="fc" id="L29">            case SOUTH -&gt; WEST;</span>
+<span class="fc" id="L30">            case WEST -&gt; NORTH;</span>
         };
     }
 
     public Direction turnLeft() {
-<span class="pc bpc" id="L35" title="1 of 4 branches missed.">        return switch (this) {</span>
+<span class="fc bfc" id="L35" title="All 4 branches covered.">        return switch (this) {</span>
 <span class="fc" id="L36">            case NORTH -&gt; WEST;</span>
 <span class="fc" id="L37">            case EAST -&gt; NORTH;</span>
-<span class="nc" id="L38">            case SOUTH -&gt; EAST;</span>
+<span class="fc" id="L38">            case SOUTH -&gt; EAST;</span>
 <span class="fc" id="L39">            case WEST -&gt; SOUTH;</span>
         };
     }

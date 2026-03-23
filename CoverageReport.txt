@@ -1,0 +1,96 @@
+White Box Coverage Report (generated on 2026-03-23)
+
+Evidence used:
+1) Tests executed: mvn -Dtest=QAWhiteBoxTest test
+2) JaCoCo data: target/site/jacoco/jacoco.csv and target/site/jacoco/jacoco.xml
+3) CSV test matrix: whitebox_test_cases.csv
+
+Metric definitions used in this report:
+- Statement coverage: JaCoCo LINE coverage (practical statement proxy in this project)
+- Decision coverage: JaCoCo BRANCH coverage
+- Condition coverage: manual white-box condition outcome analysis, validated by executed test IDs
+- Multiple condition coverage: manual feasible-combination analysis for multi-condition predicates, validated by executed test IDs
+
+Per-class coverage
+
+Class: com.coen448.robot.PenState
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00% (no boolean decision predicates)
+- Multiple condition: 100.00% (no multi-condition predicates)
+
+Class: com.coen448.robot.Robot
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00% (no boolean decision predicates)
+- Multiple condition: 100.00% (no multi-condition predicates)
+
+Class: com.coen448.robot.Direction
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00% (switch alternatives fully covered)
+- Multiple condition: 100.00% (no multi-condition predicates)
+
+Class: com.coen448.robot.CommandType
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00% (no boolean decision predicates)
+- Multiple condition: 100.00% (no multi-condition predicates)
+
+Class: com.coen448.robot.Floor
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00%
+- Multiple condition: 100.00%
+- Evidence notes:
+  - In-bounds multi-condition predicate `x >= 0 && x < n && y >= 0 && y < n` feasible combinations covered by TC17-TC21 and TC45-TC48 (9/9 feasible combinations).
+
+Class: com.coen448.robot.Command
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00% (no boolean decision predicates)
+- Multiple condition: 100.00% (no multi-condition predicates)
+
+Class: com.coen448.robot.Simulator
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00%
+- Multiple condition: 100.00% (no multi-condition predicates)
+- Evidence notes:
+  - Condition outcomes for `floor==null`, `s<0`, pen-state checks, loop-boundary checks are covered by TC35, TC36, TC38-TC42, TC50.
+
+Class: com.coen448.robot.CommandParser
+- Statement (LINE): 96.43%
+- Decision (BRANCH): 91.30%
+- Condition: 100.00% of feasible condition outcomes
+- Multiple condition: 100.00% (no multi-condition predicates)
+- Gap-to-100 notes (JaCoCo):
+  - Uncovered branch from switch `default` inside single-char command block is unreachable for valid regex match set [U,D,R,L,P,C,Q,H].
+  - Uncovered branch on `value < 0` for move parse is infeasible with regex `(\d+)` (negative input is rejected before this branch).
+
+Class: com.coen448.robot.Main
+- Statement (LINE): 100.00%
+- Decision (BRANCH): 100.00%
+- Condition: 100.00%
+- Multiple condition: 100.00%
+- Evidence notes:
+  - Main loop/history/error/quit paths executed by `mainLoop_withHistoryAndParseError_executesAndExits`.
+  - Replay OR-condition `(Quit || History)` covers all feasible combinations via replay history values (Q, H, non-Q/H).
+
+Overall project coverage (all classes under src/main/java)
+- Statement coverage (LINE proxy): 99.51% (201/202 lines covered)
+- Decision/Branch coverage: 97.80% (88/91 branches covered)
+- Condition coverage: 100.00% of feasible condition outcomes
+- Multiple condition coverage: 100.00% of feasible multi-condition combinations
+
+Requirement check
+- Statement coverage > 80%: PASS (99.51%)
+- Decision coverage > 80%: PASS (97.80%)
+- Condition coverage > 80%: PASS (100.00% feasible)
+- Multiple condition coverage > 80%: PASS (100.00% feasible)
+- Target ideally 100%:
+  - Achieved for condition and multiple condition (feasible-space definition).
+  - Not fully achieved for JaCoCo statement/decision due to infeasible CommandParser branches noted above.
+
+Additional tooling note
+- During test execution, JaCoCo 0.8.11 logs instrumentation warnings for JDK classes compiled with class-file major version 69. The build remains successful and project-class coverage data is generated and used above.
