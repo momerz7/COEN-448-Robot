@@ -4,6 +4,8 @@
 # ds_store machine
 .DS_Store
 
+target/
+
 # Log file
 *.log
 

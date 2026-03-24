@@ -21,7 +21,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 class QAWhiteBoxTest {
 
     @ParameterizedTest(name = "{0}-{1}")
-    @CsvFileSource(files = "whitebox_test_cases.csv", delimiter = ';', numLinesToSkip = 1)
+    @CsvFileSource(resources = "/whitebox_test_cases.csv", delimiter = ';', numLinesToSkip = 1)
     void runWhiteBoxCsvCases(String testId, String operation, String inputA, String inputB, String inputC, String expected,
             String coverageTargets) {
 
