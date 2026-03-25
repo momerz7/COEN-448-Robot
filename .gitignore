@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
 
+# ds_store machine
+.DS_Store
+
+target/
+
 # Log file
 *.log
 
