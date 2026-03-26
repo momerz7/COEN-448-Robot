@@ -1,436 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.coen448.robot.FloorTest" time="0.038" tests="11" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="25"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/test-classes:/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/classes:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/momo/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/momo/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/momo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/momo/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\paole\Documents\coen448\task3\COEN-448-Robot\target\test-classes;C:\Users\paole\Documents\coen448\task3\COEN-448-Robot\target\classes;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\paole\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\paole\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\paole\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="CA"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/surefire/surefirebooter-20260220105947282_3.jar /Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/surefire 2026-02-20T10-59-47_248-jvmRun1 surefire-20260220105947282_1tmp surefire_0-20260220105947282_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\paole\AppData\Local\Temp\surefire440670156989461647\surefirebooter-20260323142049479_3.jar C:\Users\paole\AppData\Local\Temp\surefire440670156989461647 2026-03-23T14-20-49_197-jvmRun1 surefire-20260323142049479_1tmp surefire_0-20260323142049479_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/test-classes:/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/classes:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/momo/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/momo/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/momo/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/momo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/momo/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\paole\Documents\coen448\task3\COEN-448-Robot\target\test-classes;C:\Users\paole\Documents\coen448\task3\COEN-448-Robot\target\classes;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\paole\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\paole\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\paole\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\paole\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/momo"/>
+    <property name="user.home" value="C:\Users\paole"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2026-01-20"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\paole\Documents\coen448\task3\COEN-448-Robot"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot/target/surefire/surefirebooter-20260220105947282_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\paole\AppData\Local\Temp\surefire440670156989461647\surefirebooter-20260323142049479_3.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="25.0.2"/>
-    <property name="user.name" value="momo"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="26.2"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="paole"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/momo/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/dc/n5nb5x8x65b_zlk0tqrbyvxc0000gn/T/"/>
-    <property name="java.version" value="25.0.2"/>
-    <property name="user.dir" value="/Users/momo/Documents/VisualStudioCode/COEN 448/COEN-448-Robot"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\paole\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\paole\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="C:\Users\paole\Documents\coen448\task3\COEN-448-Robot"/>
+    <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/momo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="user.language.format" value="fr"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\paole\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\paole\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\paole\AppData\Local\Programs\Microsoft VS Code;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Graphviz\bin;C:\Users\paole\AppData\Local\Pub\Cache\bin;C:\Users\paole\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Users\paole\dev\flutter\bin;C:\Users\paole\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\paole\AppData\Local\Microsoft\WindowsApps;C:\Users\paole\AppData\Roaming\npm;C:\Users\paole\.dotnet\tools;C:\ProgramData\chocolatey\bin;C:\Program Files\Apache\Maven\bin;C:\Users\paole\dev\flutter\bin;C:\Users\paole\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\paole\AppData\Local\Microsoft\WindowsApps;C:\Users\paole\AppData\Roaming\npm;C:\Users\paole\.dotnet\tools;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="25.0.2"/>
-    <property name="stdin.encoding" value="UTF-8"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="69.0"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testConstructorZero" classname="com.coen448.robot.FloorTest" time="0.01"/>
-  <testcase name="testMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.001"/>
-  <testcase name="testCOnstructorNegative" classname="com.coen448.robot.FloorTest" time="0.0"/>
-  <testcase name="testClear" classname="com.coen448.robot.FloorTest" time="0.001"/>
-  <testcase name="testMark" classname="com.coen448.robot.FloorTest" time="0.001"/>
+  <testcase name="testConstructorZero" classname="com.coen448.robot.FloorTest" time="0.004"/>
+  <testcase name="testMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testCOnstructorNegative" classname="com.coen448.robot.FloorTest" time="0.003"/>
+  <testcase name="testClear" classname="com.coen448.robot.FloorTest" time="0.0"/>
+  <testcase name="testMark" classname="com.coen448.robot.FloorTest" time="0.0"/>
   <testcase name="testNotInBounds" classname="com.coen448.robot.FloorTest" time="0.0"/>
-  <testcase name="testRenderWithIndices" classname="com.coen448.robot.FloorTest" time="0.01">
-    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
-	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClass(BuiltinClassLoader.java:560)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:602)
-	at java.base/java.lang.Class.forName(Class.java:599)
-	at java.base/java.util.ServiceLoader.loadProvider(ServiceLoader.java:755)
-	at java.base/java.util.ServiceLoader$ModuleServicesLookupIterator.hasNext(ServiceLoader.java:955)
-	at java.base/java.util.ServiceLoader$1.hasNext(ServiceLoader.java:1164)
-	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1246)
-	at java.base/sun.util.cldr.CLDRLocaleProviderAdapter.<init>(CLDRLocaleProviderAdapter.java:75)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at java.base/sun.util.locale.provider.LocaleProviderAdapter.forType(LocaleProviderAdapter.java:181)
-	at java.base/sun.util.locale.provider.LocaleProviderAdapter.findAdapter(LocaleProviderAdapter.java:280)
-	at java.base/sun.util.locale.provider.LocaleProviderAdapter.getAdapter(LocaleProviderAdapter.java:251)
-	at java.base/java.text.DecimalFormatSymbols.getInstance(DecimalFormatSymbols.java:181)
-	at java.base/java.util.Formatter.getDecimalFormatSymbols(Formatter.java:2031)
-	at java.base/java.util.Formatter.getZero(Formatter.java:2039)
-	at java.base/java.util.Formatter$FormatSpecifier.localizedMagnitude(Formatter.java:4678)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3511)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3496)
-	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:3194)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3155)
-	at java.base/java.util.Formatter.format(Formatter.java:2761)
-	at java.base/java.util.Formatter.format(Formatter.java:2698)
-	at java.base/java.lang.String.format(String.java:4455)
-	at com.coen448.robot.Floor.renderWithIndices(Floor.java:44)
-	at com.coen448.robot.FloorTest.testRenderWithIndices(FloorTest.java:79)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 104 more
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:166)
-	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 105 more
-java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/util/resources/provider/LocaleDataProvider with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
-	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClass(BuiltinClassLoader.java:560)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:602)
-	at java.base/java.lang.Class.forName(Class.java:599)
-	at java.base/java.util.ServiceLoader.loadProvider(ServiceLoader.java:755)
-	at java.base/java.util.ServiceLoader$ModuleServicesLookupIterator.hasNext(ServiceLoader.java:955)
-	at java.base/java.util.ServiceLoader$1.hasNext(ServiceLoader.java:1164)
-	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1246)
-	at java.base/sun.util.resources.Bundles.loadBundleFromProviders(Bundles.java:261)
-	at java.base/sun.util.resources.Bundles.findBundleOf(Bundles.java:199)
-	at java.base/sun.util.resources.Bundles.loadBundleOf(Bundles.java:143)
-	at java.base/sun.util.resources.Bundles.of(Bundles.java:104)
-	at java.base/sun.util.resources.LocaleData.getBundle(LocaleData.java:179)
-	at java.base/sun.util.resources.LocaleData.getNumberFormatData(LocaleData.java:175)
-	at java.base/sun.util.locale.provider.LocaleResources.getDecimalFormatSymbolsData(LocaleResources.java:223)
-	at java.base/java.text.DecimalFormatSymbols.initialize(DecimalFormatSymbols.java:829)
-	at java.base/java.text.DecimalFormatSymbols.<init>(DecimalFormatSymbols.java:115)
-	at java.base/sun.util.locale.provider.DecimalFormatSymbolsProviderImpl.getInstance(DecimalFormatSymbolsProviderImpl.java:85)
-	at java.base/java.text.DecimalFormatSymbols.getInstance(DecimalFormatSymbols.java:183)
-	at java.base/java.util.Formatter.getDecimalFormatSymbols(Formatter.java:2031)
-	at java.base/java.util.Formatter.getZero(Formatter.java:2039)
-	at java.base/java.util.Formatter$FormatSpecifier.localizedMagnitude(Formatter.java:4678)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3511)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3496)
-	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:3194)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3155)
-	at java.base/java.util.Formatter.format(Formatter.java:2761)
-	at java.base/java.util.Formatter.format(Formatter.java:2698)
-	at java.base/java.lang.String.format(String.java:4455)
-	at com.coen448.robot.Floor.renderWithIndices(Floor.java:44)
-	at com.coen448.robot.FloorTest.testRenderWithIndices(FloorTest.java:79)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting sun/util/resources/provider/LocaleDataProvider with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 107 more
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:166)
-	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 108 more
-java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/text/resources/cldr/ext/FormatData_en_CA with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
-	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClass(BuiltinClassLoader.java:560)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:602)
-	at java.base/java.lang.Class.forName(Class.java:599)
-	at jdk.localedata/sun.util.resources.provider.LocaleDataProvider.loadResourceBundle(LocaleDataProvider.java:53)
-	at jdk.localedata/sun.util.resources.provider.LocaleDataProvider.getBundle(LocaleDataProvider.java:39)
-	at java.base/sun.util.resources.Bundles.loadBundleFromProviders(Bundles.java:264)
-	at java.base/sun.util.resources.Bundles.findBundleOf(Bundles.java:199)
-	at java.base/sun.util.resources.Bundles.loadBundleOf(Bundles.java:143)
-	at java.base/sun.util.resources.Bundles.of(Bundles.java:104)
-	at java.base/sun.util.resources.LocaleData.getBundle(LocaleData.java:179)
-	at java.base/sun.util.resources.LocaleData.getNumberFormatData(LocaleData.java:175)
-	at java.base/sun.util.locale.provider.LocaleResources.getDecimalFormatSymbolsData(LocaleResources.java:223)
-	at java.base/java.text.DecimalFormatSymbols.initialize(DecimalFormatSymbols.java:829)
-	at java.base/java.text.DecimalFormatSymbols.<init>(DecimalFormatSymbols.java:115)
-	at java.base/sun.util.locale.provider.DecimalFormatSymbolsProviderImpl.getInstance(DecimalFormatSymbolsProviderImpl.java:85)
-	at java.base/java.text.DecimalFormatSymbols.getInstance(DecimalFormatSymbols.java:183)
-	at java.base/java.util.Formatter.getDecimalFormatSymbols(Formatter.java:2031)
-	at java.base/java.util.Formatter.getZero(Formatter.java:2039)
-	at java.base/java.util.Formatter$FormatSpecifier.localizedMagnitude(Formatter.java:4678)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3511)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3496)
-	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:3194)
-	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:3155)
-	at java.base/java.util.Formatter.format(Formatter.java:2761)
-	at java.base/java.util.Formatter.format(Formatter.java:2698)
-	at java.base/java.lang.String.format(String.java:4455)
-	at com.coen448.robot.Floor.renderWithIndices(Floor.java:44)
-	at com.coen448.robot.FloorTest.testRenderWithIndices(FloorTest.java:79)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting sun/text/resources/cldr/ext/FormatData_en_CA with JaCoCo 0.8.11.202310140853/f33756c.
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
-	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
-	... 105 more
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
-	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:166)
-	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
-	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
-	... 106 more
-]]></system-err>
-  </testcase>
+  <testcase name="testRenderWithIndices" classname="com.coen448.robot.FloorTest" time="0.0"/>
   <testcase name="testInBounds" classname="com.coen448.robot.FloorTest" time="0.0"/>
-  <testcase name="testRenderMarkedCells" classname="com.coen448.robot.FloorTest" time="0.0"/>
-  <testcase name="testIsMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.0"/>
-  <testcase name="testConstructor" classname="com.coen448.robot.FloorTest" time="0.001"/>
+  <testcase name="testRenderMarkedCells" classname="com.coen448.robot.FloorTest" time="0.012"/>
+  <testcase name="testIsMarkOutOfBounds" classname="com.coen448.robot.FloorTest" time="0.002"/>
+  <testcase name="testConstructor" classname="com.coen448.robot.FloorTest" time="0.004"/>
 </testsuite>
