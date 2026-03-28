@@ -152,18 +152,18 @@ class LKWQA {
 
     // ---------- Weyuker Axiom 7 (Antidecomposition) tests ----------
 
-    private String integratedPlanP(String input) {
+    private CommandType integratedPlanP(String input) {
         Command cmd = parser.parse(input);
-        return cmd.type().name();
+        return cmd.type();
     }
 
     @Test
     @DisplayName("AX7-P1: T_P is adequate for integrated P (type-level behavior)")
     void ax7_p1_typeLevelAdequacyForProgramP() {
-        assertEquals("Pen_Up", integratedPlanP("u"));
-        assertEquals("Init", integratedPlanP("I5"));
-        assertEquals("Move", integratedPlanP("M0"));
-        assertEquals("History", integratedPlanP("h"));
+        assertEquals(CommandType.Pen_Up, integratedPlanP("u"));
+        assertEquals(CommandType.Init, integratedPlanP("I5"));
+        assertEquals(CommandType.Move, integratedPlanP("M0"));
+        assertEquals(CommandType.History, integratedPlanP("h"));
         assertThrows(IllegalArgumentException.class, () -> integratedPlanP("bad"));
     }
 
