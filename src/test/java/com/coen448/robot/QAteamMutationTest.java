@@ -63,6 +63,7 @@ public class QAteamMutationTest {
         assertEquals(5,command.arg());
     }
 
+    //QA team mutation test for move command with zero to get 100% mutation score for the case when move command is given with zero argument. This should throw an exception as move command should have a positive integer argument.
     @Test
     void testMoveZero(){
         Command command = parser.parse("M 0");
