@@ -3,7 +3,7 @@
 ## Scope and Setup
 
 - Scope: `parse(String line)` in `src/main/java/com/coen448/robot/CommandParser.java`.
-- Test artifact created: `src/test/java/com/coen448/robot/LKW_QA.java`.
+- Test artifact created: `src/test/java/com/coen448/robot/LKWQA.java`.
 - Supporting QA artifacts created under `QA/` at project root.
 - Production code was not changed.
 
