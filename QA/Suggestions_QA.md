@@ -18,8 +18,8 @@
 
 ## 3. Strengthen QA Regression Safety
 
-- Keep `LKW_QA.java` in CI with:
-  1. `mvn -Dtest=LKW_QA test`
+- Keep `LKWQA.java` in CI with:
+  1. `mvn -Dtest=LKWQA test`
   2. JaCoCo threshold checks
   3. SonarQube hotspot review for parser boundary conditions
 

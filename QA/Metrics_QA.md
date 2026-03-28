@@ -37,7 +37,7 @@
 
 ## Test Execution Outcome
 
-1. Created tests in `LKW_QA.java`: 17 declared test methods with one parameterized family expanded to 25 executed test cases.
+1. Created tests in `LKWQA.java`: 17 declared test methods with one parameterized family expanded to 25 executed test cases.
 2. Status after execution:
    - Passed: 25
    - Failed: none
