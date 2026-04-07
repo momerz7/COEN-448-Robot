@@ -46,7 +46,7 @@
         
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.11</version>
+          <version>0.8.14</version>
 
           <executions> 
           
@@ -101,6 +101,31 @@
         
           
         </plugin>
+
+         <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.15.3</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>1.2.1</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <targetClasses>
+                        <param>com.coen448.robot.CommandParser</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>com.coen448.robot.CommandParserTest</param>
+                    </targetTests>
+                    <includedMethods>
+                        <param>parse</param>
+                    </includedMethods>
+                    <mutationThreshold>50</mutationThreshold>
+                 </configuration>
+            </plugin>
         
       </plugins>
     

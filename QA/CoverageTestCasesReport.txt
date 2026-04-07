@@ -1,0 +1,89 @@
+Coverage Test Cases Report
+Date: 2026-03-24
+Scope: src/main/java/**/*.java (all 9 production classes)
+Test driver: src/test/java/com/coen448/robot/CoverageTestCasesTest.java
+CSV source: src/test/resources/coverage_test_cases.csv
+JaCoCo command used: mvn -Dtest=CoverageTestCasesTest test
+JaCoCo evidence files: target/site/jacoco/jacoco.csv, target/site/jacoco/jacoco.xml
+
+Metric definitions used
+- Statement coverage: JaCoCo LINE counter.
+- Decision coverage: JaCoCo BRANCH counter.
+- Condition coverage: atomic condition outcomes (true/false) measured from source decisions and verified by executed tests (feasible outcomes basis).
+- Multiple condition coverage: feasible truth-combination coverage for decisions with multiple atomic conditions.
+
+Per-class coverage
+(Statement/Decision from JaCoCo; Condition/Multiple-Condition from executed decision matrix analysis)
+
+Class: com.coen448.robot.Command
+- Statement: 100.00%
+- Decision: 100.00% (no branch points)
+- Condition: 100.00% (no boolean decisions)
+- Multiple condition: 100.00% (no multi-condition decisions)
+
+Class: com.coen448.robot.CommandParser
+- Statement: 96.43%
+- Decision: 91.30%
+- Condition: 100.00% (all feasible atomic outcomes exercised)
+- Multiple condition: 100.00% (no multi-condition boolean expression in code)
+
+Class: com.coen448.robot.CommandType
+- Statement: 100.00%
+- Decision: 100.00% (no branch points)
+- Condition: 100.00% (no boolean decisions)
+- Multiple condition: 100.00% (no multi-condition decisions)
+
+Class: com.coen448.robot.Direction
+- Statement: 100.00%
+- Decision: 100.00%
+- Condition: 100.00% (all directional decision outcomes exercised)
+- Multiple condition: 100.00% (no multi-condition boolean expression)
+
+Class: com.coen448.robot.Floor
+- Statement: 100.00%
+- Decision: 100.00%
+- Condition: 100.00% (all inBounds atomic conditions seen true and false)
+- Multiple condition: 100.00% (inBounds feasible combinations covered: 9/9 by TC_FLOOR_01..TC_FLOOR_09)
+
+Class: com.coen448.robot.Main
+- Statement: 98.15%
+- Decision: 100.00%
+- Condition: 100.00% (all feasible atomic outcomes covered across main/replay conditions)
+- Multiple condition: 100.00% (replay condition feasible combinations covered: 3/3)
+
+Class: com.coen448.robot.PenState
+- Statement: 100.00%
+- Decision: 100.00% (no branch points)
+- Condition: 100.00% (no boolean decisions)
+- Multiple condition: 100.00% (no multi-condition decisions)
+
+Class: com.coen448.robot.Robot
+- Statement: 100.00%
+- Decision: 100.00% (no branch points)
+- Condition: 100.00% (no boolean decisions)
+- Multiple condition: 100.00% (no multi-condition decisions)
+
+Class: com.coen448.robot.Simulator
+- Statement: 100.00%
+- Decision: 100.00%
+- Condition: 100.00% (all feasible atomic outcomes exercised)
+- Multiple condition: 100.00% (no multi-condition boolean expression)
+
+Overall project coverage
+- Statement coverage: 99.02% (202/204 lines)
+- Decision/Branch coverage: 97.80% (89/91 branches)
+- Condition coverage: 100.00% (feasible atomic outcomes basis)
+- Multiple condition coverage: 100.00% (feasible multi-condition combinations basis)
+
+Threshold check (>80% minimum, ideally 100%)
+- Statement: PASS (>80%)
+- Decision: PASS (>80%)
+- Condition: PASS (>80%)
+- Multiple condition: PASS (>80%)
+
+Gap-to-100% notes
+- Statement not 100% due to:
+  - CommandParser.parse default switch arm for unknown single-char command is unreachable because regex pre-validates input.
+  - Main default constructor line not invoked directly in tests (class used only via static methods and main entrypoint).
+- Decision not 100% due to:
+  - CommandParser.parse includes effectively unreachable branch in move negative check path with current INIT regex (digits only).
