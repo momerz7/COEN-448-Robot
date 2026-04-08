@@ -66,6 +66,10 @@ public class CommandParserTest {
     @Test
     void testMoveNegative(){ assertThrows(IllegalArgumentException.class, () -> parser.parse("M -5")); }
 
+    // added in response to QA team feedback about zero distance move command
+    @Test
+    void testMoveZero(){ assertThrows(IllegalArgumentException.class, () -> parser.parse("M 0")); }
+
     /* Test for commands */
 
     @Test
