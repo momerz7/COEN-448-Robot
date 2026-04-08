@@ -38,7 +38,7 @@ public class CommandParser {
                 if (value <= 0) throw new IllegalArgumentException("Grid size must be non-negative");
                 return new Command(CommandType.Init, value);
             } else {
-                if (value <= 0) throw new IllegalArgumentException("Move distance must be non-negative");
+        
                 return new Command(CommandType.Move, value);
             }
         }

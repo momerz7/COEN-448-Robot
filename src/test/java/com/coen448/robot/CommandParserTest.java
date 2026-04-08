@@ -68,7 +68,11 @@ public class CommandParserTest {
 
     // added in response to QA team feedback about zero distance move command
     @Test
-    void testMoveZero(){ assertThrows(IllegalArgumentException.class, () -> parser.parse("M 0")); }
+    void testMoveZero(){ 
+        Command command = parser.parse("M 0");
+        assertEquals(CommandType.Move, command.type());
+        assertEquals(0,command.arg()); 
+    }
 
     /* Test for commands */
 
